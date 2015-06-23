@@ -22,7 +22,7 @@ a = b;
 
 After this code executes, what are the values of a and b? Please explain your answer.
 
-<!-- Replace this comment with your answer -->
+a = 3, b = 3. 'a' gets a new value of '3' as a result of assigning operation; 'b' never gets changed
 
 ## Question 2
 
@@ -34,7 +34,7 @@ c = c + d;
 
 After this code executes, what is the value of c?  Please explain what the last line of this program `c = c + d;` means.
 
-<!-- Replace this comment with your answer -->
+c = 7. In the last line 1) the right side of the assignment operation gets evaluated to 7; 2) 'c' gets a new value assigned to it.
 
 ## Question 3
 
@@ -47,7 +47,7 @@ y = 10;
 
 After this code executes, what are the values of x and y?  Please explain your answer.
 
-<!-- Replace this comment with your answer -->
+x = 3; y = 10; We assigned new values to each variable in the last two lines.
 
 ## Question 4
 
@@ -59,7 +59,14 @@ weather === "sunny";
 
 What are the values of these expressions?  Explain your answers.
 
-<!-- Replace this comment with your answer -->
+var weather;
+undefined  - variable declaration
+
+weather = "sunny";
+'sunny' - we assign a new value to weather variable
+
+weather === "sunny";
+true - we check if weather variable contains "sunny" in it; and it does!
 
 ## Question 5
 
@@ -71,7 +78,7 @@ if (howMuchILikeSushi >= 3) {
 }
 
 if (x > 0) {
-  console.log("sushi is tasty");  
+  console.log("sushi is tasty");
 }
 ```
 
@@ -79,7 +86,8 @@ Imagine that you take the code from this question, save it to a file called `foo
 
 What would be the output? Explain your answer.
 
-<!-- Replace this comment with your answer -->
+ReferenceError: x is not defined
+what happens is the JS interpreter first declares a variable howMuchILikeSushi and assigns a value to it. Then it checks if the (howMuchILikeSushi >= 3) is true (it's not so it proceeds), then it checks if (x > 0) is true. X has never been declared so it spits out an error.
 
 ## Question 6
 
@@ -87,9 +95,9 @@ What would be the output? Explain your answer.
 var howMuchILikeSushi = 2;
 
 if (howMuchILikeSushi > 0) {
-  console.log("sushi is tasty");  
+  console.log("sushi is tasty");
 } else if (x >= 3) {
-  console.log("sushi is delicious");  
+  console.log("sushi is delicious");
 } else {
   console.log("I don't like sushi");
 }
@@ -99,7 +107,8 @@ Imagine that you take the code from this question, save it to a file called `sus
 
 What would be the output? Explain your answer.
 
-<!-- Replace this comment with your answer -->
+sushi is tasty
+what happens is the JS interpreter first declares a variable howMuchILikeSushi and assigns a value to it. Then it checks the first condition (howMuchILikeSushi > 0) which is true. It does what the block says to do (console.log("sushi is tasty");) and stops the "if" execution;
 
 ## Question 7
 
@@ -118,7 +127,8 @@ Imagine that you take the code from this question, save it to a file called `nam
 
 What would you have to type to exit the while loop?  Explain your answer.
 
-<!-- Replace this comment with your answer -->
+SeCrEt
+The code (specifically the 'while' loop) will continue requesting an input until 'SeCrEt' or empty string is entered. Then it stops.
 
 ---
 
